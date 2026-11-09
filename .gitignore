@@ -1,0 +1,11 @@
+# Java Bytecode
+*.class
+
+# VS Code & BlueJ Metadata
+.vscode/
+*.ctxt
+package.bluej
+
+# OS Artifacts
+.DS_Store
+__MACOSX/
