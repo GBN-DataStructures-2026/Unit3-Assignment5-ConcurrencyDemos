@@ -1,0 +1,144 @@
+Concurrency & Multi-Threading Quiz 
+
+1. Thread objects are capable of throwing a checked run-time __________________.
+A. ThreadStopper
+B. InterruptedException
+C. QueueUnderFlowException
+D. ArrayIndexOutOfBoundsException
+E. UberNoobException
+
+
+2. It is possible to create a "thread-safe" data structure by adding the keyword _________________ to each of the method headers of the object.
+A. protected
+B. void
+C. new
+D. synchronized
+E. thread
+
+
+3. We use a call to the _______ method to indicate that the main thread should wait until another thread has completed executing before continuing.
+A. join
+B. wait
+C. pause
+D. stop
+E. merge
+
+
+
+
+4. Every Java program that executes has a thread called _________.
+A. main
+B. start
+C. thread
+D. begin
+E. execute
+
+5. Thread objects are required to implement the _______________ interface.
+A. Runnable
+B. List
+C. Queue
+D. Threadable
+E. Comparable
+
+
+6. Select the answer that provides all of the possible outputs for the following code segment:
+Counter c = new Counter();
+c.increment();
+c.increment();
+System.out.println(c);
+A. 4
+B. 3 or 4
+C. 0, 1, 2, or 3
+D. 1, 2, 3, or 4
+E. 2 
+
+
+
+
+7. Select the answer that provides all of the possible outputs for the following code segment:
+Counter c = new Counter();
+Runnable r = new Increase(c, 3);
+Thread t = new Thread(r);
+t.start();
+System.out.println(c);
+A. 2
+B. 4
+C. 3 or 4
+D. 0, 1, 2, or 3
+E. 1, 2, 3, or 4
+
+
+8. Select the answer that provides all of the possible outputs for the following code segment:
+Counter c = new Counter();
+Runnable r = new Increase(c, 3);
+Thread t = new Thread(r);
+c.increment();
+t.start();
+System.out.println(c);
+A. 2
+B. 4
+C. 3 or 4
+D. 0, 1, 2, or 3
+E. 1, 2, 3, or 4
+
+
+
+
+9. Select the answer that provides all of the possible outputs for the following code segment:
+Counter c = new Counter();
+Runnable r = new Increase(c, 3);
+Thread t = new Thread(r);
+t.start();
+c.increment();
+System.out.println(c);
+A. 2
+B. 4
+C. 3 or 4
+D. 0, 1, 2, or 3
+E. 1, 2, 3, or 4
+
+10. Select the answer that provides all of the possible outputs for the following code segment:
+Counter c = new Counter();
+Runnable r = new Increase(c, 3);
+Thread t = new Thread(r);
+t.start();
+c.increment();
+t.join();
+System.out.println(c);
+A. 2
+B. 4
+C. 3 or 4
+D. 0, 1, 2, or 3
+E. 1, 2, 3, or 4
+
+
+
+11. Select the answer that provides all of the possible outputs for the following code segment:
+SyncCounter sc = new SyncCounter();
+Runnable r = new IncreaseSync(sc, 3);
+Thread t = new Thread(r);
+t.start();
+sc.increment();
+t.join();
+System.out.println(sc);
+A. 2
+B. 4
+C. 3 or 4
+D. 0, 1, 2, or 3
+E. 1, 2, 3, or 4
+
+
+12. Select the answer that provides all of the possible outputs for the following code segment:
+Counter c = new Counter();
+Runnable r = new Increase(c, 3);
+Thread t = new Thread(r);
+t.start();
+t.join();
+c.increment();
+System.out.println(c);
+A. 2
+B. 4
+C. 3 or 4
+D. 0, 1, 2, or 3
+E. 1, 2, 3, or 4
+
